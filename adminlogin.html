@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Mentor - Admin Login</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .input-container {
+            position: relative;
+            margin: 20px 0;
+        }
+
+        .input-field {
+            width: 365px;
+            height: 40px;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid black;
+            font-size: 18px;
+            outline: none;
+        }
+
+        .input-label {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: 0.3s ease;
+            font-size: 30px;
+            color: #5247C5;
+            pointer-events: none;
+        }
+
+        .input-field:focus + .input-label,
+        .input-field:not(:placeholder-shown) + .input-label {
+            top: -20px;
+            font-size: 14px;
+            color: #343AC0;
+        }
+
+        .button {
+            width: 164px;
+            height: 77px;
+            background: white;
+            border-radius: 38.50px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: black;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 1920px; height: 1080px; position: relative; background: white">
+        <!-- Background Image -->
+        <img style="width: 1027px; height: 706px; left: 826px; top: 200px; position: absolute" src="images/bg2.png" />
+        
+        <!-- Navigation Menu -->
+        <div style="width: 157px; height: 58px; left: 1062px; top: 80px; position: absolute; color: black; font-size: 40px; font-family: 'Poppins', sans-serif; font-weight: 400;">Home</div>
+        <div style="width: 190px; height: 58px; left: 1264px; top: 80px; position: absolute; color: black; font-size: 40px; font-family: 'Poppins', sans-serif; font-weight: 400;">About us</div>
+        <div style="width: 152px; height: 58px; left: 1499px; top: 80px; position: absolute; color: black; font-size: 40px; font-family: 'Poppins', sans-serif; font-weight: 400;">Sign in</div>
+        <div style="width: 157px; height: 58px; left: 1696px; top: 80px; position: absolute; color: black; font-size: 40px; font-family: 'Poppins', sans-serif; font-weight: 400;">Log in</div>
+        
+        <!-- Logo -->
+        <img style="width: 626px; height: 150px; left: 88px; top: 70px; position: absolute" src="images/logo111.jpg" />
+        
+        <!-- Form Section -->
+        <div style="width: 430px; height: 72px; left: 154px; top: 269px; position: absolute; color: black; font-size: 40px; font-family: 'Poppins', sans-serif; font-weight: 600;">Admin Login</div>
+
+        <!-- Username Field -->
+        <div class="input-container" style="left: 219px; top: 425px; position: absolute;">
+            <input type="text" class="input-field" id="username" placeholder=" " />
+            <label for="username" class="input-label">Username</label>
+        </div>
+
+        <!-- Password Field -->
+        <div class="input-container" style="left: 219px; top: 515px; position: absolute;">
+            <input type="password" class="input-field" id="password" placeholder=" " />
+            <label for="password" class="input-label">Password</label>
+        </div>
+        
+        <!-- Login Button -->
+        <div class="button" style="left: 312px; top: 633px; position: absolute;">Log in</div>
+    </div>
+</body>
+</html>

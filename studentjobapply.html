@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Mentor - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+        }
+
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 100px;
+            background: white;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: 20px;
+        }
+
+        /* Right side navigation links */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .nav-right div {
+            font-size: 20px;
+            color: black;
+            cursor: pointer;
+        }
+
+        /* Skeleton Body */
+        .skeleton-container {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            margin-top: 120px; /* Increased margin-top to avoid logo overlap */
+        }
+
+        .left-section {
+            width: 766px;
+            height: 730px; /* Adjusted height */
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 0px solid rgb(82, 80, 80); /* Reduced border thickness */
+            border-radius: 20px;
+            box-shadow: 0px 15px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .left-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .right-section {
+            width: 749px;
+            height: 680px; /* Adjusted height to match left section */
+            background: white;
+            margin-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Image adjustments without containers */
+        .right-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Add margin between the two images */
+        .right-section img + img {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <div class="nav-left">
+            <!-- Logo -->
+            <div class="logo">
+                <img style="width: 626px; height: 150px; left: 88px; top: 70px; position: absolute" src="images/logo111.jpg" />
+            </div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="nav-right">
+            <!-- Logo Image -->
+            <img src="images/search.png" alt="Logo" style="width: 357px; height: 58px; position: absolute; left: 830px; top: 80px;">
+            
+            <a href="studentjobapply.html">
+                <div style="width: 400px; height: 58px; left: 1230px; top: 80px; position: absolute; color: black; font-size: 40px; font-family: 'Poppins', sans-serif; font-weight: 400; cursor: pointer;">Job Profiles</div>
+            </a>
+            
+            <a href="#">
+                <div style="width: 152px; height: 58px; left: 1499px; top: 80px; position: absolute; color: black; font-size: 40px; font-family: 'Poppins', sans-serif; font-weight: 400; cursor: pointer;">Resume</div>
+            </a>
+            
+            <a href="studentlogin.html">
+                <div style="width: 157px; height: 58px; left: 1696px; top: 80px; position: absolute; color: black; font-size: 40px; font-family: 'Poppins', sans-serif; font-weight: 400; cursor: pointer;">Log out</div>
+            </a>
+            
+            <a href="#">
+                <img src="images/profile.png" alt="Profile" style="width: 70px; height: 43px; position: absolute; left: 1870px; top: 90px; cursor: pointer;">
+            </a>
+            
+        </div>
+        
+    </div>
+
+    <!-- Main Body -->
+    <div class="skeleton-container">
+        <!-- Left Section (Image Background) -->
+        <div class="left-section">
+            <img src="images/jobdesc.png" alt="Left Image 1">
+        </div>
+
+        <!-- Right Section (Job Info) -->
+        <div class="right-section">
+            <img src="images/jobdesc1.png" alt="Right Image 1">
+            <img src="images/jobdesc2.png" alt="Right Image 2">
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+        }
+
+        /* Dashboard Container */
+        .dashboard-container {
+            width: 1920px;
+            height: 1080px;
+            position: relative;
+            background: white;
+        }
+
+        /* Header Links */
+        .header-link {
+            position: absolute;
+            color: black;
+            font-size: 40px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+
+        .header-link:nth-child(1) {
+            left: 902px;
+            top: 80px;
+            width: 190px;
+        }
+
+        .header-link:nth-child(2) {
+            left: 1139px;
+            top: 80px;
+            width: 372px;
+        }
+
+        .header-link:nth-child(3) {
+            left: 1548px;
+            top: 80px;
+            width: 157px;
+        }
+
+        /* Logo */
+        .logo {
+            width: 626px;
+            height: 150px;
+            left: 88px;
+            top: 70px;
+            position: absolute;
+        }
+
+        /* Stat Box */
+        .stat-box {
+            width: 324px;
+            height: 89px;
+            position: absolute;
+            background: white;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 25px;
+            border: 3px solid black;
+            opacity: 0.4;
+        }
+
+        /* Stat Box Text */
+        .stat-text {
+            position: absolute;
+            font-size: 25px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: black;
+        }
+
+        .stat-text-value {
+            font-weight: 400;
+        }
+
+        /* Image Containers */
+        .image-container {
+            position: absolute;
+            box-shadow: 0px 25px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 46px;
+        }
+
+        .image-container.large {
+            width: 1006px;
+            height: 557px;
+            left: 99px;
+            top: 403px;
+        }
+
+        .image-container.small {
+            width: 714px;
+            height: 557px;
+            left: 1139px;
+            top: 403px;
+        }
+
+        .notification .bell {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: black;
+            left: 17.50px;
+            top: 10px;
+        }
+
+        .notification .circle {
+            width: 55px;
+            height: 55px;
+            position: absolute;
+            background: black;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Header Links -->
+        <div class="header-link">Add Post</div>
+        <div class="header-link">View Applications</div>
+        <div class="header-link">Log out</div>
+        <img src="images/profile.png" alt="Logo" style="width: 70px; height: 43px; position: absolute; left: 1770px; top: 90px;">
+
+        <!-- Logo -->
+        <img class="logo" src="images/logo111.jpg" alt="Logo">
+
+        <!-- Stat Boxes -->
+        <div class="stat-box" style="left: 148px; top: 247px;"></div>
+        <div class="stat-text" style="left: 168px; top: 257px;">No of Students:<br>
+            <span class="stat-text-value">896</span>
+        </div>
+
+        <div class="stat-box" style="left: 529px; top: 245px;"></div>
+        <div class="stat-text" style="left: 549px; top: 255px;">No of Applications:<br>
+            <span class="stat-text-value">489</span>
+        </div>
+
+        <div class="stat-box" style="left: 930px; top: 245px;"></div>
+        <div class="stat-text" style="left: 950px; top: 255px;">No of Offers Given:<br>
+            <span class="stat-text-value">96</span>
+        </div>
+
+        <div class="stat-box" style="left: 1331px; top: 243px;"></div>
+        <div class="stat-text" style="left: 1351px; top: 253px;">No of Companies:<br>
+            <span class="stat-text-value">7</span>
+        </div>
+
+        <!-- Image Containers -->
+        <img class="image-container large" src="images/empdas1.png" alt="Large Image">
+        <img class="image-container small" src="images/empdas2.png" alt="Small Image">
+
+    </div>
+
+    <!-- JavaScript for Logout Redirection -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const logoutLink = document.querySelector('.header-link:nth-child(3)');
+            logoutLink.addEventListener('click', function () {
+                window.location.href = 'employeelogin.html'; // Replace 'logout.html' with the desired URL
+            });
+        });
+    </script>
+
+</body>
+
+</html>
